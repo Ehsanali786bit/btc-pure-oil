@@ -1,0 +1,536 @@
+/**
+ * BTC OILS - Responsive & Mobile Performance Engine
+ * Zero lag, hardware-friendly, 100% stable touch layout for Nigerian mobile networks
+ */
+
+/* ==========================================================================
+   DESKTOP (Large Screens & High-Res)
+   ========================================================================== */
+@media (min-width: 1400px) {
+  .hero-section {
+    min-height: 85vh;
+  }
+}
+
+/* ==========================================================================
+   TABLETS & COMPACT LAPTOPS (max-width: 1024px)
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+  }
+
+  .hero-stats-row {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .hero-visual-card {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .heritage-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .nutrition-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .culinary-tabs-bar {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin-bottom: 1.15rem;
+  }
+
+  .culinary-tabs-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .culinary-tab-btn {
+    flex-shrink: 0;
+    padding: 0.5rem 0.95rem;
+    font-size: 0.88rem;
+    gap: 0.4rem;
+  }
+
+  .culinary-showcase {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1.15rem;
+    border-radius: 16px;
+  }
+
+  .culinary-image-box {
+    max-height: 220px;
+    aspect-ratio: 16 / 10;
+  }
+
+  .culinary-image-box img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .culinary-display-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .culinary-display-desc {
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin-bottom: 0.85rem;
+  }
+
+  .calculator-box {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+
+  /* Hamburger Toggle Display */
+  .mobile-toggle-btn {
+    display: flex !important;
+  }
+
+  /* Desktop Nav Menu Hidden by Default on Tablet/Mobile */
+  .nav-menu {
+    display: none !important;
+  }
+
+  /* Full-screen Clean Modal Drawer when Opened */
+  .nav-menu.open {
+    display: flex !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: #08090b !important;
+    z-index: 99999 !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 2rem !important;
+    gap: 1.25rem !important;
+    overflow-y: auto !important;
+  }
+
+  .nav-menu.open .nav-link {
+    font-size: 1.35rem !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    padding: 0.4rem 1rem !important;
+  }
+
+  .nav-close-btn {
+    display: block !important;
+    position: absolute !important;
+    top: 1.25rem !important;
+    right: 1.5rem !important;
+    background: none !important;
+    border: none !important;
+    color: #ffffff !important;
+    font-size: 2.5rem !important;
+    line-height: 1 !important;
+    cursor: pointer !important;
+    padding: 0.5rem !important;
+  }
+}
+
+/* ==========================================================================
+   MOBILE PHONES & PORTRAIT TABLETS (max-width: 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* Prevent horizontal drag & wobble */
+  html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+  }
+
+  body {
+    padding-bottom: 74px !important; /* Space for sticky bottom action bar */
+  }
+
+  .container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .section-padding {
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
+  }
+
+  /* Compact Stable Header */
+  .site-header {
+    height: 64px !important;
+    min-height: 64px !important;
+    padding: 0 1rem !important;
+    background: #08090b !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .site-header.scrolled {
+    height: 64px !important;
+    min-height: 64px !important;
+    padding: 0 1rem !important;
+  }
+
+  .nav-container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    height: 100% !important;
+  }
+
+  .brand-logo-img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .brand-title {
+    font-size: 1.15rem !important;
+  }
+
+  .brand-subtitle {
+    font-size: 0.58rem !important;
+  }
+
+  .nav-actions {
+    gap: 0.5rem !important;
+  }
+
+  .nav-phone-link {
+    display: none !important; /* Located cleanly in bottom mobile action bar */
+  }
+
+  .nav-actions .btn-sm {
+    padding: 0.45rem 0.85rem !important;
+    font-size: 0.8rem !important;
+  }
+
+  /* DISABLE HEAVY LAG-INDUCING ANIMATIONS & BLURS ON MOBILE */
+  .hero-bg-image {
+    animation: none !important;
+    transform: none !important;
+    filter: brightness(0.35) !important;
+  }
+
+  .hero-badge-halo {
+    display: none !important;
+  }
+
+  .hero-emblem-wrap {
+    animation: none !important;
+    transform: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background: #11141a !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7) !important;
+    padding: 1.25rem !important;
+    max-width: 100% !important;
+  }
+
+  .floating-pill {
+    display: none !important; /* Removes negative offset that caused horizontal page slide */
+  }
+
+  .surface-card {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background: #11141a !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+    padding: 1.25rem !important;
+  }
+
+  /* HIDE FLOATING WHATSAPP BUTTON (prevents overlap with bottom action bar) */
+  .floating-whatsapp-widget {
+    display: none !important;
+  }
+
+  /* STICKY BOTTOM ACTION BAR */
+  .mobile-action-bar {
+    display: block !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background: #08090b !important;
+    border-top: 1px solid var(--color-gold) !important;
+  }
+
+  /* Hero Adjustments */
+  .hero-section {
+    padding-top: calc(64px + 1.25rem) !important;
+    padding-bottom: 2.5rem !important;
+    min-height: auto !important;
+  }
+
+  .hero-title {
+    font-size: clamp(1.85rem, 7.5vw, 2.4rem) !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .hero-description {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .hero-cta-group {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 0.75rem !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .hero-cta-group .btn {
+    width: 100% !important;
+    padding: 0.85rem 1.25rem !important;
+  }
+
+  .hero-stats-row {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+    padding-top: 1.5rem !important;
+  }
+
+  .stat-value {
+    font-size: 1.6rem !important;
+  }
+
+  /* Single Column Timeline */
+  .timeline-track::before {
+    left: 24px !important;
+  }
+
+  .timeline-step {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding-left: 56px !important;
+    margin-bottom: 2rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .step-node {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 48px !important;
+    height: 48px !important;
+    font-size: 1rem !important;
+  }
+
+  .step-card {
+    width: 100% !important;
+    text-align: left !important;
+    padding: 1.25rem !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Purity Comparison Slider on Mobile */
+  .purity-inspector-container {
+    padding: 1rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .slider-wrapper {
+    height: 240px !important;
+  }
+
+  .purity-comparison-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  .feature-pill-list {
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+  }
+
+  /* Products Grid */
+  /* Product Catalog Cards Mobile Ergonomics */
+  .products-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .product-image-wrap {
+    height: 200px !important;
+  }
+
+  .product-pricing-row {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.85rem !important;
+    padding-top: 1rem !important;
+  }
+
+  .product-pricing-row .product-price-block {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: baseline !important;
+    width: 100% !important;
+  }
+
+  .product-pricing-row .btn-product-order {
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 0.75rem 1rem !important;
+    font-size: 0.88rem !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+  }
+
+  .nutrition-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  /* Simple Order Card & Contact Card on Mobile */
+  .simple-card {
+    padding: 1.25rem 1rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    border-radius: 16px !important;
+  }
+
+  .simple-contact-channels {
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+  }
+
+  .simple-channel-card {
+    padding: 0.85rem !important;
+  }
+
+  .simple-stepper {
+    gap: 0.5rem !important;
+  }
+
+  .simple-step-btn {
+    width: 46px !important;
+    height: 46px !important;
+    font-size: 1.5rem !important;
+  }
+
+  .simple-step-input {
+    width: 95px !important;
+    font-size: 1.6rem !important;
+  }
+
+  .simple-total-val {
+    font-size: 1.75rem !important;
+  }
+
+  .simple-btn-full {
+    padding: 0.85rem 1rem !important;
+    font-size: 1rem !important;
+  }
+
+  .form-dual-actions {
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .footer-bottom {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+    text-align: center !important;
+  }
+}
+
+/* ==========================================================================
+   EXTRA SMALL PHONES (max-width: 380px)
+   ========================================================================== */
+@media (max-width: 380px) {
+  .site-header {
+    padding: 0 0.65rem !important;
+  }
+
+  .brand-title {
+    font-size: 1.05rem !important;
+  }
+
+  .hero-title {
+    font-size: 1.75rem !important;
+  }
+
+  .btn-sm {
+    padding: 0.4rem 0.65rem !important;
+    font-size: 0.75rem !important;
+  }
+
+  .calc-pack-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .calc-pack-card.featured {
+    grid-column: span 1 !important;
+  }
+
+  .calc-total-amount {
+    font-size: 1.75rem !important;
+  }
+
+  .calc-step-btn {
+    width: 42px !important;
+    height: 42px !important;
+  }
+}
